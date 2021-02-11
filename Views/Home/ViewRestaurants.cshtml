@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<RestaurantApplication.Models.Restaurant>
+
+<div>
+        <tbody>
+            @foreach (RestaurantApplication.Models.Restaurant x in Model)
+            {
+                <tr>
+                    <th>@x.RestaurantName</th>
+                    <th>@x.FavoriteDish</th>
+                    <th>@x.RestaurantPhone</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

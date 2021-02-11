@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Top Restaurants in Provo";
+}
+
+@model IEnumerable<string>
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Top Restaurants</title>
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+    <header>
+        <h1>@ViewBag.Title </h1>
+    </header>
+
+    <ul>
+        @foreach (string i in Model)
+        {
+            <li>@i</li>
+        }
+    </ul>
+</body>
+
+</html>
